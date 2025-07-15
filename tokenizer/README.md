@@ -45,8 +45,28 @@ The [examples](examples/) directory contains an example tokenizer.
    ```bash
    ./shell
 
+### Running Commands
+Type commands as you would in a normal shell. You can use:
+- Piping: `ls | grep .c`
+- Redirection: `cat < file.txt > out.txt`
+- Multiple commands: `echo hello; pwd`
+- Built-ins: `cd ..`, `help`, `exit`, `source script.txt`, `prev`
 
+---
 
+## File Structure
+- `shell.c`: Main Shell Program
+- `tokens.c, tokens.h`: General-purpose shell tokenizer
+- `tokenize.c`: Simple shell tokenizer demo
+- `tokenize_expr.c`: Arithmetic expression tokenizer
 
+---
 
+## Requirements
+- GCC (C99 or newer)
+- Unix-like OS (Linux/MacOS)
 
+---
+
+## Credits
+Developed by Aditya Vikrant and Rohil Doshi
