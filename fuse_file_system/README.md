@@ -42,3 +42,31 @@ This project implements a custom file system in C using FUSE (Filesystem in User
 2. **Compile the Project**  
    ```bash
    make
+
+3. **Run the Filesystem**  
+   ```bash
+   mkdir mount_dir
+   ./nufs -f mount_dir backing_store.img
+
+4. **Run Tests**  
+   ```bash
+   make test
+
+---
+
+## File Structure
+- `nufs.c`: Main FUSE operations implementation (filesystem driver)
+- `storage.c/.h`: Core file and directory logic (create, read, write, delete)
+- `blocks.c/.h`: Block device abstraction, allocation, free, mmap
+- `inode.c/.h`: Inode structure and management
+- `directory.c/.h`: Directory entries, lookup, path resolution
+- `bitmap.c/.h`: Bitmap manipulation utilities
+- `slist.c/.h`: String list utilities for path parsing
+- `Makefile`: Build and test automation
+
+---
+
+## Credits
+Developed by Aditya Vikrant and Rohil Doshi
+
+   
