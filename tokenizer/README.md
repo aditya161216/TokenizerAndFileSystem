@@ -69,4 +69,4 @@ Type commands as you would in a normal shell. You can use:
 ---
 
 ## Credits
-Developed by Aditya Vikrant and Rohil Doshi
+Developed by Aditya Vikrant
